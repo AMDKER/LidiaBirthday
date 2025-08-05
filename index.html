@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Joyeux Anniversaire !</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+  <script src="confetti.js" defer></script>
+<body>
+  <div class="container">
+    <div class="gift-box" onclick="openBox()">
+      🎁
+    </div>
+    <div class="message hidden" id="message">
+      <h1>🎉 Joyeux Anniversaire ! 🎉</h1>
+      <p>En ce jour spécial, je te souhaite plein de bonheur, de réussite dans tout ce que tu entreprends, et surtout une santé de fer.<br>
+      Que cette nouvelle année de ta vie t’apporte des opportunités et de grandes victoires.<br>
+      Garde toujours ta motivation et ton sourire, ils t’ouvrent toutes les portes.<br>
+      Profite bien de ta journée ! 🎂✨</p>
+      
+<p style="margin-top: 20px; font-style: italic;">
+  Coucou <span class="lydia-shine">Lydia</span>,<br><br>
+  Je n’ai pas pu t’offrir un vrai cadeau aujourd’hui.<br>
+  Mais j’ai voulu te montrer à ma façon que je pense à toi en ce jour spécial.<br><br>
+  Alors j’ai créé cette petite application rien que pour toi, avec tout mon cœur 💛<br><br>
+  Joyeux anniversaire <span class="lydia-shine">Lydia</span> !<br>
+  — Eric 😊
+</p>
+
+<a href="surprise.html" class="btn">Voir la surprise</a>
+    </div>
+    <audio id="background-music" loop >
+      <source src="music.mp3" type="audio/mp3">
+      Ton navigateur ne supporte pas l'audio.
+    </audio>
+    <button id="toggle-music" class="btn">🎵 Activer la musique</button>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    const music = document.getElementById('background-music');
+    const btn = document.getElementById('toggle-music');
+    let isPlaying = false;
+    btn.addEventListener('click', () => {
+      if (!isPlaying) {
+        music.play();
+        btn.textContent = '⏸️ Pause musique';
+      } else {
+        music.pause();
+        btn.textContent = '🎵 Activer la musique';
+      }
+      isPlaying = !isPlaying;
+    });
+  </script>
+</body>
+</html>

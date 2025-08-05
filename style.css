@@ -1,0 +1,83 @@
+/* Effet brillant pour le nom Lydia */
+.lydia-shine {
+  background: linear-gradient(90deg, #fff700, #ff8c00, #ff00de, #00eaff, #fff700 80%);
+  background-size: 200% auto;
+  color: #fff;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 8px;
+  animation: shine-lydia 2s linear infinite;
+  box-shadow: 0 0 8px #fff70099, 0 0 16px #ff00de55;
+}
+
+@keyframes shine-lydia {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #ffdde1;
+  background: linear-gradient(to right, #ffdde1, #ee9ca7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+.gift-box {
+  font-size: 100px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.gift-box:hover {
+  transform: scale(1.2);
+}
+
+.hidden {
+  display: none;
+}
+
+.message {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #ee9ca7;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Confetti animation */
+.confetti {
+  position: fixed;
+  top: -20px;
+  width: 12px;
+  height: 18px;
+  border-radius: 3px;
+  z-index: 9999;
+  pointer-events: none;
+  animation: confetti-fall linear forwards;
+}
+
+@keyframes confetti-fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}

@@ -106,6 +106,13 @@ body {
 
 /* Responsive styles */
 @media (max-width: 600px) {
+/* Compteur de visites */
+.visit-counter {
+  margin-top: 30px;
+  font-size: 0.95rem;
+  color: #888;
+  text-align: center;
+}
   body {
     padding: 0 2px;
     font-size: 16px;

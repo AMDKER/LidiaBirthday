@@ -35,6 +35,7 @@
       Ton navigateur ne supporte pas l'audio.
     </audio>
     <button id="toggle-music" class="btn">🎵 Activer la musique</button>
+    <div id="visit-counter" class="visit-counter"></div>
   </div>
   <script src="script.js"></script>
   <script>
@@ -51,6 +52,13 @@
       }
       isPlaying = !isPlaying;
     });
+    // Compteur de visites local
+    const visitKey = 'visitCount';
+    let count = localStorage.getItem(visitKey);
+    if (!count) count = 0;
+    count++;
+    localStorage.setItem(visitKey, count);
+    document.getElementById('visit-counter').textContent = `Nombre de visites sur cet appareil : ${count}`;
   </script>
 </body>
 </html>

@@ -1,25 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joyeux Anniversaire !</title>
   <link rel="stylesheet" href="style.css">
 </head>
   <script src="confetti.js" defer></script>
 <body>
   <div class="container">
-    <div class="gift-box" onclick="openBox()">
+    <div class="gift-box large-gift" onclick="openBox()">
       🎁
     </div>
-    <div class="message hidden" id="message">
-      <h1>🎉 Joyeux Anniversaire ! 🎉</h1>
-      <p>En ce jour spécial, je te souhaite plein de bonheur, de réussite dans tout ce que tu entreprends, et surtout une santé de fer.<br>
+    <div class="message hidden large-message" id="message">
+      <h1 class="large-title">🎉 Joyeux Anniversaire ! 🎉</h1>
+      <p class="large-text">En ce jour spécial, je te souhaite plein de bonheur, de réussite dans tout ce que tu entreprends, et surtout une santé de fer.<br>
       Que cette nouvelle année de ta vie t’apporte des opportunités et de grandes victoires.<br>
       Garde toujours ta motivation et ton sourire, ils t’ouvrent toutes les portes.<br>
       Profite bien de ta journée ! 🎂✨</p>
       
-<p style="margin-top: 20px; font-style: italic;">
+<p class="large-italic">
   Coucou <span class="lydia-shine">Lydia</span>,<br><br>
   Je n’ai pas pu t’offrir un vrai cadeau aujourd’hui.<br>
   Mais j’ai voulu te montrer à ma façon que je pense à toi en ce jour spécial.<br><br>
@@ -28,7 +28,7 @@
   — Eric 😊
 </p>
 
-<a href="surprise.html" class="btn">Voir la surprise</a>
+<a href="surprise.html" class="btn large-btn">Voir la surprise</a>
     </div>
     <audio id="background-music" loop >
       <source src="music.mp3" type="audio/mp3">

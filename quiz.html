@@ -3,6 +3,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Petit Quiz 🎓</title>
   <link rel="stylesheet" href="style.css">
   <style>
@@ -15,27 +16,27 @@
   <script src="confetti.js" defer></script>
 <body>
   <div class="container quiz-container">
-    <h1>🎉 Petit Quiz Anniversaire pour <span class="lydia-shine">Lydia</span> 🎉</h1>
+    <h1 class="large-title">🎉 Petit Quiz Anniversaire pour <span class="lydia-shine">Lydia</span> 🎉</h1>
     <form id="quizForm">
-      <div class="question">
-        <h3>1. Quelle fleur est souvent offerte pour un anniversaire ?</h3>
-        <label><input type="radio" name="q1" value="0"> Tournesol</label><br>
-        <label><input type="radio" name="q1" value="1"> Rose</label><br>
-        <label><input type="radio" name="q1" value="0"> Marguerite</label>
+      <div class="question large-text">
+        <h3 class="large-text">1. Quelle fleur est souvent offerte pour un anniversaire ?</h3>
+        <label class="large-text"><input type="radio" name="q1" value="0"> Tournesol</label><br>
+        <label class="large-text"><input type="radio" name="q1" value="1"> Rose</label><br>
+        <label class="large-text"><input type="radio" name="q1" value="0"> Marguerite</label>
       </div>
-      <div class="question">
-        <h3>2. Que signifie « joyeux anniversaire » ?</h3>
-        <label><input type="radio" name="q2" value="0"> Une fête surprise</label><br>
-        <label><input type="radio" name="q2" value="1"> Un vœu de bonheur pour sa nouvelle année</label><br>
-        <label><input type="radio" name="q2" value="0"> Une recette de gâteau</label>
+      <div class="question large-text">
+        <h3 class="large-text">2. Que signifie « joyeux anniversaire » ?</h3>
+        <label class="large-text"><input type="radio" name="q2" value="0"> Une fête surprise</label><br>
+        <label class="large-text"><input type="radio" name="q2" value="1"> Un vœu de bonheur pour sa nouvelle année</label><br>
+        <label class="large-text"><input type="radio" name="q2" value="0"> Une recette de gâteau</label>
       </div>
-      <div class="question">
-        <h3>3. Qu’est-ce qu’on souffle le jour de son anniversaire ?</h3>
-        <label><input type="radio" name="q3" value="0"> Des ballons</label><br>
-        <label><input type="radio" name="q3" value="1"> Des bougies</label><br>
-        <label><input type="radio" name="q3" value="0"> Du vent</label>
+      <div class="question large-text">
+        <h3 class="large-text">3. Qu’est-ce qu’on souffle le jour de son anniversaire ?</h3>
+        <label class="large-text"><input type="radio" name="q3" value="0"> Des ballons</label><br>
+        <label class="large-text"><input type="radio" name="q3" value="1"> Des bougies</label><br>
+        <label class="large-text"><input type="radio" name="q3" value="0"> Du vent</label>
       </div>
-      <button type="submit" class="btn">Soumettre</button>
+      <button type="submit" class="btn large-btn">Soumettre</button>
     </form>
     <div id="result" style="display:none; margin-top:20px;"></div>
   </div>
